@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+h1
+{color:darkblue;
+font-size:80px;
+}
+h2
+{
+color:yellow;
+font-size:40px;
+}
+td
+{
+color:darkblue;
+font-size:20px;
+}
+</style>
+<script>
+function check()
+{
+var pas=document.getElementById("pass").value;
+if(pas=="M")
+{
+alert("done");
+}
+else
+{
+alert("error");
+}
+}
+</script>
+</head>
+<body style="background-color:skyblue;">
+<title>welcome home page</title>
+<marquee direction="left"><h1 id="h1" style="color:red;">WELCOME TO MAHARAJA RESIDANCE</h1></marquee>
+<h2 align="center"><u>Create a Account for new user</u></h2>
+<form action="mytext.html" method="post" >
+<table align="center">
+<tr>
+<td>First name</td>
+<td><input type="text" required /></td>
+</tr>
+<tr>
+<td>Last name</td>
+<td><input type="text" required /></td>
+</tr>
+<tr>
+<td>Phone</td>
+<td><input type="text" required /></td>
+</tr>
+<tr>
+<td>E.mail</td>
+<td><input type="text" required /></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input id="pass" type="password" required /></td>
+</tr>
+
+<tr>
+<td>State:</td>
+<td>
+<select>
+<option>Utter pradesh</option>
+<option>Madhya pradesh</option>
+<option>Jharkhand</option>
+<option>Rajasthan</option>
+<option>Hariyana</option>
+<option>Punjab</option>
+<option>Delhi</option>
+<option>Gujarat</option>
+<option>Tamil Nadu</option>
+<option>kerala</option>
+<option>West Bengal</option>
+<option>Manipur</option>
+<option>Maharashtra</option>
+<option>Karnataka</option>
+<option>Bihar</option>
+<option>Andhra Pradesh</option>
+<option>Jammu&kashmir</option>
+</select
+</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="gender" required/>M
+<input type="radio" name="gender" required/>F
+</tr>
+<tr>
+<td>Payment Type</td>
+<td><input type="radio" name="mode" required/>onlypaybl/CreditCard</td>
+</tr>
+<tr>
+<td><button onclick="check()">check</button>
+
+<td><input type="submit"/></td>
+
+
+<td><input type="Reset" /></td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
